@@ -1,0 +1,19 @@
+{
+  "name": "simple-calculator-jenkins-test",
+  "version": "1.0.0",
+  "description": "A simple calculator application with Jenkins CI/CD pipeline",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Mariam-Amro-2005/Simple-Calculator-Jenkins-Test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}

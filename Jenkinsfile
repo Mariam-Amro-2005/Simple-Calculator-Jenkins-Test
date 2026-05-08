@@ -1,5 +1,4 @@
 pipeline {
-    // Execute on any available agent
     agent any
 
     stages {
@@ -13,7 +12,6 @@ pipeline {
         stage('Install Dependencies') {
             steps {
                 echo 'Installing npm dependencies...'
-                // Using 'bat' block for Windows Jenkins agents
                 bat 'npm install'
             }
         }
@@ -21,7 +19,6 @@ pipeline {
         stage('Run Unit Tests') {
             steps {
                 echo 'Running unit tests using Jest...'
-                // Using 'bat' block for Windows Jenkins agents
                 bat 'npm test'
             }
         }

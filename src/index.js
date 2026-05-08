@@ -1,8 +1,3 @@
-/**
- * Main entry point of the application.
- * Demonstrates the usage of the calculator module.
- */
-
 const calculator = require('./calculator');
 
 console.log('--- Simple Calculator ---');

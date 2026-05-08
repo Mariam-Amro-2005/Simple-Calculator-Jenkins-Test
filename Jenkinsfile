@@ -13,16 +13,16 @@ pipeline {
         stage('Install Dependencies') {
             steps {
                 echo 'Installing npm dependencies...'
-                // Using 'sh' block ensures compatibility with Linux Jenkins agents
-                sh 'npm install'
+                // Using 'bat' block for Windows Jenkins agents
+                bat 'npm install'
             }
         }
 
         stage('Run Unit Tests') {
             steps {
                 echo 'Running unit tests using Jest...'
-                // Using 'sh' block ensures compatibility with Linux Jenkins agents
-                sh 'npm test'
+                // Using 'bat' block for Windows Jenkins agents
+                bat 'npm test'
             }
         }
     }
